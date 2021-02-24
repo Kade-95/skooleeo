@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'second', component: SecondComponent },
   { path: 'third', component: ThirdComponent },
   { path: 'forth', component: ForthComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'forth' }
+  { path: '', pathMatch: 'full', redirectTo: 'first' }
 ];
 
 @NgModule({
