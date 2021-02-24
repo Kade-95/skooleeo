@@ -1,0 +1,67 @@
+<footer class="footer">
+    <div class="footer-up">
+        <span class="footer-up-left">
+            <img class="logo" src="./../../assets/public/png/logo.png" alt="">
+            <span class="footer-up-left-A">
+                <h5 class="footer-up-left-A-title">
+                    No 1 CRM solution in Africa
+                </h5>
+                <p class="footer-up-left-A-details">
+                    Terms of Use | Privacy Policy
+                </p>
+            </span>
+            <span class="footer-up-left-B">
+                <h5 class="footer-up-left-B-title">
+                    Get in touch
+                </h5>
+                <p class="footer-up-left-B-details">
+                    +234-80-000-0000
+                </p>
+                <span class="footer-up-left-B-social">
+                    <img *ngFor="let icon of socials" [src]="icon" alt="">
+                </span>
+            </span>
+        </span>
+        <span class="footer-up-right">
+            <span class="footer-up-right-languages">
+                <img src="./../../assets/public/png/world 1.png" alt="">
+                <select class="footer-up-right-languages-list">
+                    <option *ngFor="let language of languages">{{language}}</option>
+                </select>
+            </span>
+            <span class="footer-up-right-details">
+                <span class="footer-up-right-details-item">
+                    <h4 class="footer-up-right-details-item-title">Product</h4>
+                    <span class="footer-up-right-details-item-list">
+                        <p class="footer-up-right-details-item-list-data" *ngFor="let data of details['products']">
+                            {{data}}</p>
+                    </span>
+                </span>
+                <span class="footer-up-right-details-item">
+                    <h4 class="footer-up-right-details-item-title">Company</h4>
+                    <span class="footer-up-right-details-item-list">
+                        <p class="footer-up-right-details-item-list-data" *ngFor="let data of details['company']">
+                            {{data}}</p>
+                    </span>
+                </span>
+                <span class="footer-up-right-details-item">
+                    <h4 class="footer-up-right-details-item-title">Oneburner for teams</h4>
+                    <span class="footer-up-right-details-item-list">
+                        <p class="footer-up-right-details-item-list-data" *ngFor="let data of details['oneburner']">
+                            {{data}}</p>
+                    </span>
+                </span>
+                <span class="footer-up-right-details-item">
+                    <h4 class="footer-up-right-details-item-title">Resources</h4>
+                    <span class="footer-up-right-details-item-list">
+                        <p class="footer-up-right-details-item-list-data" *ngFor="let data of details['resources']">
+                            {{data}}</p>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </div>
+    <div class="footer-down">
+        © 2020 Oneburner.com | All Rights Reserved.
+    </div>
+</footer>

@@ -1,0 +1,39 @@
+<header class="header" #Header>
+    <span class="header-cover"></span>
+    <nav class="header-nav">
+        <div class="header-nav-left">
+            <img class="logo" src="./../../assets/public/png/logo.png" alt="">
+            <span class="header-nav-left-menu">
+                <span class="header-nav-left-menu-product"
+                    (mouseenter)="ProductMenuDisplay.classList.remove('fa-angle-up'); ProductMenuDisplay.classList.add('fa-angle-down'); Header.classList.add('big');"
+                    (mouseleave)="ProductMenuDisplay.classList.add('fa-angle-up'); ProductMenuDisplay.classList.remove('fa-angle-down'); Header.classList.remove('big');">
+                    <a class="header-nav-left-menu-product-text">Product</a>
+                    <i class="fa fa-angle-up header-nav-left-menu-product-icon" #ProductMenuDisplay></i>
+                </span>
+                <span class="header-nav-left-menu-button">Pricing</span>
+                <span class="header-nav-left-menu-button">Enterprice</span>
+                <span class="header-nav-left-menu-button">Support</span>
+            </span>
+        </div>
+        <span class="header-nav-right">
+            <span class="header-nav-right-button">Contact Sales</span>
+            <span class="header-nav-right-button">Login</span>
+            <span class="simple-button">
+                <a class="simple-button-text">Try For Free</a>
+                <i class="fa fa-angle-right simple-button-icon"></i>
+            </span>
+        </span>
+    </nav>
+
+    <menu class="header-menu" #ProductMenu>
+        <div class="header-product-menu">
+            <span class="header-product-menu-item" *ngFor="let item of productMenuItems">
+                <img [src]="item.icon" alt="" class="header-product-menu-item-icon">
+                <span class="header-product-menu-item-details">
+                    <h4 class="header-product-menu-item-details-title">{{item.title}}</h4>
+                    <p class="header-product-menu-item-details-description">{{item.description}}</p>
+                </span>
+            </span>
+        </div>
+    </menu>
+</header>

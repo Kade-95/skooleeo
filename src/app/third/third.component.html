@@ -1,0 +1,90 @@
+<div class="third">
+    <app-header></app-header>
+
+    <div class="third-section">
+        <form class="third-section-form">
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">Last Name</label>
+                    <input type="text" class="third-section-form-group-input-data">
+                </span>
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">First Name</label>
+                    <input type="text" class="third-section-form-group-input-data">
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">First Name</label>
+                    <input type="text" class="third-section-form-group-input-data">
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">Phone Number</label>
+                    <span type="text" class="third-section-form-group-input-inputandselect">
+                        <span class="third-section-form-group-input-inputandselect-list">
+                            <img src="./../../assets/public/png/flag.png" alt="">
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+                        <input class="third-section-form-group-input-inputandselect-text">
+                    </span>
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">Product of Interest</label>
+                    <select type="text" class="third-section-form-group-input-data">
+                        <option selected disabled>Select an option</option>
+                    </select>
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">Company Name</label>
+                    <input type="text" class="third-section-form-group-input-data">
+                </span>
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">Company Size</label>
+                    <select type="text" class="third-section-form-group-input-data">
+                        <option selected disabled>Select an option</option>
+                    </select>
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <span class="third-section-form-group-input">
+                    <label class="third-section-form-group-input-label">First Name</label>
+                    <textarea type="text" class="third-section-form-group-input-data"></textarea>
+                </span>
+            </div>
+            <div class="third-section-form-group">
+                <button class="third-section-form-group-button">Contact Us</button>
+            </div>
+        </form>
+        <div class="third-section-right">
+            <span class="third-section-right-qoute">
+                <h4 class="third-section-right-qoute-title">
+                    Request a call from an expert
+                </h4>
+                <h4 class="third-section-right-qoute-details">
+                    Having thoughts on which product works best for you? Fill the form and our expert will reach out to
+                    you.
+                </h4>
+            </span>
+
+            <span class="third-section-right-offices">
+                <h4 class="third-section-right-offices-title">
+                    Our offices around Africa
+                </h4>
+                <span class="third-section-right-offices-details">
+                    <span *ngFor="let item of offices" class="third-section-right-offices-details-item">
+                        <h4 class="third-section-right-offices-details-item-name">{{item.name}}</h4>
+                        <p class="third-section-right-offices-details-item-address">{{item.address}}</p>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>

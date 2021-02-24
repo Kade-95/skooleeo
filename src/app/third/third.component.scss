@@ -1,0 +1,168 @@
+.third {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    align-content: flex-start;
+    gap: 3vh;
+
+    &-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+        justify-items: center;
+        align-items: center;
+        padding: 15vh 3%;
+        box-shadow: var(--seperator);
+
+        &-form {
+            box-shadow: 2px 2px 20px rgba(51, 51, 51, 0.2);
+            padding: 10vh 1vw;
+            display: grid;
+            grid-template-rows: max-content;
+            grid-template-columns: 1fr;
+            align-content: flex-start;
+            gap: 5vh;
+            width: 100%;
+
+            &-group{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-input{
+                    width: 100%;
+                    display: grid;
+                    grid-template-rows: max-content max-content;
+                    grid-template-columns: 1fr;
+                    padding: 0vh 5%;
+                    gap: 1vh;
+
+                    &-label{}
+
+                    &-data{
+                        width: 100%;
+                        min-height: 50px;
+                        border: 2px solid rgba(51, 51, 51, 0.8);
+                        border-radius: 5px;
+
+                        option:disabled{
+                            color: var(--major-gray);
+                        }
+                    }
+
+                    &-inputandselect{
+                        width: 100%;
+                        min-height: 50px;
+                        border: 2px solid rgba(51, 51, 51, 0.8);
+                        border-radius: 5px;
+                        display: grid;
+                        grid-template-columns: max-content 1fr;
+
+                        &-list{
+                            display: grid;
+                            grid-template-columns: max-content max-content;
+                            gap: 1vw;
+                            align-items: center;
+                            justify-items: space-around;
+                            padding: 0vh 1vw;
+
+                        }
+
+                        &-text{
+                            outline: none;
+                            border: none;
+                            border-left: 1px solid rgba(51, 51, 51, 0.8);
+                        }
+                    }
+                }
+
+                &-button{
+                    background-color: var(--major-color);
+                    color: var(--major-white);
+                    width: 100%;
+                    margin: 0px 5%;
+                    height: 50px;
+                    border-radius: 30px;
+                    border: none;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &-right {
+            display: grid;
+            grid-template-rows: repeat(2, max-content);
+            gap: 10vh;
+
+            &-qoute {
+                display: grid;
+                grid-template-rows: max-content max-content;
+                gap: 2vh;
+                align-content: flex-start;
+                font-family: var(--text-font);
+
+                &-title {
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #333333;
+                    letter-spacing: 0.05em;
+                }
+
+                &-details {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: rgba(69, 69, 69, 0.9);
+                }
+            }
+
+            &-offices {
+                display: grid;
+                grid-template-rows: max-content max-content;
+                gap: 2vh;
+                align-content: flex-start;
+                font-family: var(--text-font);
+
+                &-title {
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #333333;
+                    letter-spacing: 0.05em;
+                }
+
+                &-details {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 5vh 5vw;
+
+                    &-item {
+                        display: grid;
+                        grid-template-rows: repeat(2, max-content);
+                        gap: 2vh;
+
+                        &-name {
+                            color: #455a64;
+                            font-size: 16px;
+                            font-weight: bold;
+                            font-family: var(--text-font);
+                            text-transform: uppercase;
+                        }
+
+                        &-address{
+                            letter-spacing: .03em;
+                            color: rgba(1, 0, 29, 0.6);
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: var(--text-font);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    app-footer{
+        box-shadow: var(--seperator);
+    }
+}
